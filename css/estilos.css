@@ -1,0 +1,1043 @@
+/* Se van a trabajar solo con selectores de clases para no tener problema de especificidad  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    height: 100vh;
+
+}
+
+.headerNav {
+    height: 12%;
+    background-color: rgb(53, 58, 64);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+
+.contenedorLogo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorLogo a {
+    display: inline-block;
+    width: 40%;
+}
+
+.contenedorLogo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorLogo h2 {
+    color: white;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-right: 3%;
+}
+
+.listaNav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.linkNav {
+    color: #9a9e90;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.colorBlanco{
+    color: white;
+}
+
+.colorVerde{
+    color: #29a744;
+}
+
+/*seccion la conferencia - hermano del headerNav*/
+.laConferencia {
+    height: 88%;
+    background: linear-gradient(to bottom, #000000b7, #0000006e, #000000b7), url("../assets/img/ba1.jpg");
+    background: linear-gradient(to bottom, #00000059, #000000b0, #00000059), url("../assets/img/ba1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contenedorTextConf {
+    width: 45%;
+    color: white;
+    margin-right: 3%;
+    text-align: right;
+}
+
+
+.contenedorTextConf h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contenedorTextConf p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.botonesLaConferencia a {
+    display: inline-block;
+    padding: 10px 2.5%;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 25px;
+    font-size: 1.3rem;
+}
+
+.botonesLaConferencia a.botonVerde {
+    background-color: #27a544;
+    border: 2px solid #27a544;
+}
+
+.botonesLaConferencia a.botonTransparente {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+/* fin del header */
+
+/* Sector de los oradores */
+
+.sectionOradores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-color: white;
+    padding: 2rem;
+}
+
+.tituloPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #212429;
+}
+
+.tituloPrincipal_texto {
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.tituloSub {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.8rem;
+}
+
+
+.padreCards {
+    height: 100%;
+    width: 78%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    border-color: black;
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(202, 202, 202);
+
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.cardBody {
+    height: 40%;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.etiquetaCard {
+    display: flex;
+}
+
+.etiquetaCard h4 {
+    margin-right: 2%;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: white;
+}
+
+.etiquetaCard h4.amarillo {
+    background-color: #fcc10d;
+    color: black;
+}
+
+.etiquetaCard h4.gris {
+    background-color: #6d747c;
+}
+
+.etiquetaCard h4.azul {
+    background-color: #37aec1;
+}
+
+.etiquetaCard h4.rojo {
+    background-color: #dc3644;
+}
+
+.tituloCardBody {
+    margin-top: 0;
+}
+
+.textoCard {
+    padding-bottom: 2rem;
+}
+
+.textoCard h2 {
+    margin-bottom: 8px;
+    font-size: 100%;
+    font-size: 1.8rem;
+}
+
+.textoCard p {
+    margin-top: 0;
+    font-size: 90%;
+    line-height: 1.6;
+    font-size: 1rem;
+
+}
+
+/* Fin de la seccion Los oradores */
+
+/* sesion conoce más */
+
+.lugarFecha {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: black;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: #353a40;
+    color: white;
+    border-color: black;
+    border: 1px solid rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.botonConoceMas {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 25%;
+}
+
+/* Fin del conoce más */
+
+/* sesion conviertete en un orador- form */
+.sectionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    height: auto;
+}
+
+.subrayado {
+    border-bottom: 2px dotted #000;
+}
+
+.form {
+    text-align: center;
+    width: 52%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.nomApe {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.nomApe input {
+    width: 48%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    border: 1px solid #d3d3d3;
+}
+
+.texto {
+    color: #6d747c;
+}
+
+.texto textarea {
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.form p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.botonForm {
+    width: 100%;
+}
+
+.botonForm input {
+    width: 100%;
+    background-color: #96c93f;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+/* fin conviertete en un orador- form */
+
+/* footer */
+.footer {
+    height: 12vh;
+    background:linear-gradient( to right, #1b3642,#1d4358, #1d5271) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer a {
+    margin-inline: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.wsp{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+}
+
+@media screen and (max-width: 567px) {
+    .header{
+        height: 90vh;
+    }
+    .headerNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+    }
+
+    .contenedorLogo {
+        width: 70%;
+    }
+
+    .listaNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+    .laConferencia {
+        height: 70%;
+        background: linear-gradient(to bottom, #00000057, #000000c5, #00000057), url("../assets/img/colon.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-right: initial;
+    }
+
+    .contenedorTextConf {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contenedorTextConf h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contenedorTextConf p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        padding: 20px;
+    }
+
+    .botonesLaConferencia a {
+        font-size: 1rem;
+        padding: 10px 25px;
+        margin: 0 10px;
+    }
+
+    /* Sector de los oradores */
+    .sectionOradores {
+        height: initial;
+    }
+
+    .tituloPrincipal {
+        margin-bottom: initial;
+
+    }
+    .tituloSub {
+        font-size: 2.2rem;
+    }
+
+    
+
+    .padreCards {
+        height: initial;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Fin de la seccion Los oradores */
+
+    /* sesion conoce más */
+
+    .lugarFecha {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 300px;
+         /* img que pesa menos */
+        background-image: url("../assets/img/beach.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .botonConoceMas {
+        width: 40%;
+        max-width: 200px;
+    }
+
+    /* Fin del conoce más */
+
+    /* sesion conviertete en un orador- form */
+
+    .sectionForm {
+        height: auto;
+    }
+
+    .sectionForm p {
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+        width: 90%;
+    }
+
+    .nomApe {
+        flex-wrap: wrap;
+    }
+
+    .nomApe input {
+        width: 100%;
+        margin-bottom: 1rem;
+
+    }
+
+    .texto textarea {
+        margin-bottom: 1rem;
+    }
+
+    /* fin conviertete en un orador- form */
+
+    /* footer */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer a {
+        margin: 0.5rem;
+        display: block;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width:767px) {
+    .headerNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+
+    }
+
+    .contenedorLogo {
+        width: 70%;
+    }
+
+    .contenedorLogo h2 {
+        font-size: 2.2rem;
+    }
+
+    .listaNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .laConferencia {
+        height: 70%;
+        background: linear-gradient(to bottom, #00000057, #000000c5, #00000057), url("../assets/img/colon.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-right: initial;
+    }
+
+    .contenedorTextConf {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contenedorTextConf h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contenedorTextConf p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        padding: 20px;
+    }
+
+    .botonesLaConferencia a {
+        font-size: 1rem;
+        padding: 10px 25px;
+        margin: 0 10px;
+    }
+
+    /* Sector de los oradores */
+    .sectionOradores {
+        height: initial;
+    }
+
+    .tituloPrincipal {
+        margin-bottom: initial;
+    }
+
+    .tituloSub {
+        font-size: 2.2rem;
+    }
+
+    .padreCards {
+        height: initial;
+        max-width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Fin de la seccion Los oradores */
+
+    /* sesion conoce más */
+
+    .lugarFecha {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 300px;
+        background-image: url("../assets/img/beach.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .botonConoceMas {
+        width: 40%;
+        max-width: 200px;
+    }
+
+    /* Fin del conoce más */
+
+    /* sesion conviertete en un orador- form */
+
+    .sectionForm {
+        height: auto;
+    }
+
+    .sectionForm p {
+        text-align: center;
+    }
+
+
+    .form {
+        text-align: center;
+        width: 90%;
+    }
+
+    .nomApe {
+        flex-wrap: wrap;
+    }
+
+    .nomApe input {
+        width: 100%;
+        margin-bottom: 1rem;
+
+    }
+
+    .texto textarea {
+        margin-bottom: 1rem;
+    }
+
+    /* fin conviertete en un orador- form */
+
+    /* footer */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer a {
+        margin: 0.5rem;
+        display: block;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    .headerNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+    }
+
+    .contenedorLogo {
+        width: 50%;
+    }
+
+    .contenedorLogo h2 {
+        font-size: 2.2rem;
+    }
+
+    .navegacion {
+        width: 100%;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .linkNav {
+        font-size: 1rem;
+        margin: 0 10px 10px -8px;
+        padding: 10px 20px;
+    }
+
+    .laConferencia {
+        background: linear-gradient(to bottom, #00000057, #000000c5, #00000057), url("../assets/img/colon.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-right: initial;
+    }
+
+    .contenedorTextConf {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contenedorTextConf h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contenedorTextConf p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        padding: 20px;
+    }
+
+    .botonesLaConferencia a {
+        font-size: 1rem;
+        padding: 10px 25px;
+        margin: 0 10px;
+    }
+
+    /* Sector de los oradores */
+    .sectionOradores {
+        height: initial;
+    }
+
+    .tituloPrincipal {
+        margin-bottom: initial;
+    }
+    .tituloSub {
+        font-size: 2.2rem;
+    }
+
+    .padreCards {
+        height: initial;
+        max-width: 70%;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Fin de la seccion Los oradores */
+
+    /* sesion conoce más */
+
+    .lugarFecha {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 300px;
+        background-image: url("../assets/img/beach.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .botonConoceMas {
+        width: 40%;
+        max-width: 200px;
+    }
+
+    /* Fin del conoce más */
+
+    /* sesion conviertete en un orador- form */
+
+    .sectionForm {
+        height: auto;
+    }
+
+    .sectionForm p {
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+        width: 90%;
+    }
+
+    .nomApe {
+        flex-wrap: wrap;
+    }
+
+    .nomApe input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .texto textarea {
+        margin-bottom: 1rem;
+    }
+
+    /* fin conviertete en un orador- form */
+
+    /* footer */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer a {
+        margin: 0.5rem;
+        display: block;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    .headerNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+
+    }
+
+    .contenedorLogo {
+        width: 50%;
+    }
+
+    .contenedorLogo h2 {
+        font-size: 2.2rem;
+    }
+
+    .navegacion {
+
+        width: 100%;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .linkNav {
+        font-size: 1.2rem;
+        margin: 0 10px 10px -8px;
+        padding: 10px 20px;
+    }
+
+
+    .laConferencia {
+        padding-right: 2rem;
+    }
+
+    .contenedorTextConf {
+        width: 50%;
+        margin-right: 2%;
+    }
+
+    .sectionOradores {
+        height: auto;
+    }
+
+    .tituloSub {
+        font-size: 2rem;
+    }
+
+    /* decidi hacer que las card se muestren dos arriba y una abajo,
+    para esta medida,
+    capaz no es lo mas estetico */
+
+    .padreCards {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .textoCard h2 {
+        font-size: 1.5rem;
+    }
+
+    .botonConoceMas {
+        width: 25%;
+    }
+
+    .footer {
+        padding: 1rem 0rem;
+    }
+
+    .footer a {
+        margin-inline: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+    .headerNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding: 1rem 1rem;
+    }
+
+    .contenedorLogo {
+        width: 50%;
+    }
+
+    .contenedorLogo h2 {
+        font-size: 2.2rem;
+    }
+
+    .navegacion {
+
+        width: 100%;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .linkNav {
+        font-size: 1.2rem;
+        margin: 0 10px 10px -8px;
+        padding: 10px 20px;
+    }
+
+    .padreCards {
+        width: initial;
+    }
+
+    .footer {
+        padding: 1rem 0rem;
+    }
+
+    .footer a {
+        margin-inline: 20px;
+    }
+}
